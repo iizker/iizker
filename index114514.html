@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>burnt out network</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #000;
+  color: #eee;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+#bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('top2.jpg') center center / cover no-repeat;
+  filter: brightness(0.5) contrast(1.2);
+  z-index: -1;
+  animation: flicker 3s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { filter: brightness(0.5) contrast(1.2) saturate(1); }
+  50% { filter: brightness(0.4) contrast(1.5) saturate(0.8); }
+  100% { filter: brightness(0.6) contrast(1) saturate(1.2); }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  flex-direction: column;
+}
+
+a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.hidden-link {
+  margin-top: 20px;
+  font-size: 0.8em;
+  opacity: 0.3;
+}
+</style>
+</head>
+
+<body>
+<div id="bg"></div>
+
+<div class="container">
+  <h1>burnt out network</h1>
+  <p>晩期資本主義社会の表現と消費</p>
+  <a href="index2.html" class="hidden-link">→ 旧サイトへ</a>
+</div>
+
+</body>
+</html>
