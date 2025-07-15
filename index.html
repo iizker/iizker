@@ -1,71 +1,32 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-
-
-.chaotic-text {
-  font-family: monospace;
-  margin-top: 2em;
-}
-
-.chaotic-text p {
-  margin: 0.2em 0;
-  line-height: 1.1em;
-}
-
-.chaotic-text span.glitchy {
-  display: inline-block;
-  font-size: 1.5em;
-  color: #999;
-  animation: glitch 1s infinite;
-}
-
-.chaotic-text span.dense {
-  word-break: break-all;
-  font-size: 0.85em;
-  letter-spacing: -0.02em;
-}
-
-.chaotic-text p:nth-child(odd) {
-  font-size: 1.2em;
-}
-
-.chaotic-text p:nth-child(even) {
-  font-size: 0.9em;
-  letter-spacing: 0.3em;
-  line-height: 0.8em;
-}
-
-
-
-
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>burnt out network</title>
+<title>wehopethatyouchoke</title>
 <style>
 body {
   margin: 0;
   padding: 0;
   background: #000;
   font-family: monospace;
-  overflow: hidden;
-  height: 100vh;
+  overflow-x: hidden;
+  color: #eee;
 }
 
 .background {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('top2.jpg') no-repeat center center / cover;
+  background: url('top2.jpg') no-repeat right center / cover;
   z-index: 1;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 .noise {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: url('https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif');
-  opacity: 0.05;
+  opacity: 0.03;
   z-index: 2;
   pointer-events: none;
 }
@@ -73,19 +34,37 @@ body {
 .content-box {
   position: relative;
   z-index: 3;
-  background: rgba(50, 50, 50, 0.5);
-  color: #eee;
+  background: rgba(50, 50, 50, 0.4);
   padding: 2em;
-  max-width: 600px;
+  max-width: 700px;
   margin: 5vh auto;
   text-align: left;
-  text-shadow: 0 0 2px #000;
   font-size: 1.2em;
+  line-height: 1.6em;
 }
 
-.content-box h1 {
+.title {
   font-size: 2em;
-  margin-top: 0;
+  letter-spacing: 0.1em;
+  margin-bottom: 1em;
+}
+
+.sub {
+  font-size: 1em;
+  word-spacing: 0.2em;
+  white-space: pre-wrap;
+}
+
+.chaotic {
+  margin-top: 3em;
+  line-height: 1.2em;
+}
+
+.chaotic span {
+  display: inline-block;
+  font-size: calc(0.8em + 0.6vw);
+  line-height: calc(1em + 0.3vw);
+  letter-spacing: 0.05em;
 }
 
 a {
@@ -99,6 +78,10 @@ a:hover {
   text-shadow: 0 0 10px #fff;
 }
 
+.glitch {
+  animation: glitch 1s infinite;
+}
+
 @keyframes glitch {
   0% {transform: translate(0,0);}
   20% {transform: translate(-1px,1px);}
@@ -108,8 +91,22 @@ a:hover {
   100% {transform: translate(0,0);}
 }
 
-.glitch {
-  animation: glitch 1s infinite;
+.image-section {
+  text-align: center;
+  margin-top: 4em;
+}
+
+.image-section img {
+  max-width: 80%;
+  opacity: 0.8;
+  filter: contrast(120%) grayscale(50%) blur(0.5px);
+}
+
+.image-caption {
+  color: #ccc;
+  margin-top: 0.5em;
+  font-size: 1em;
+  letter-spacing: 0.1em;
 }
 </style>
 </head>
@@ -120,23 +117,37 @@ a:hover {
 <div class="noise"></div>
 
 <div class="content-box glitch">
-<h1>wehopethatyouchoke</h1>
-<p>
+<div class="title">wehopethatyouchoke</div>
+
+<div class="sub">
 thi   s  i s n ot a m   es s  a ge.<br>
 justfragments, l  e ft he  re  to r ot.<br>
 a sig nal   l o s t  in t h e no is e.
-</p>
+</div>
 
+<div class="chaotic">
+<span>you     are  S upp os ed   to   s ee   this █</span><br>
+<span>[system  error  :::  7yuc ahd2＊＊SybAu.]</span><br>
+<span>wewatchyouwewatchyoudonotwatchus░░░░░░░░░░░░</span><br>
+<span>you ████ are ██ not ████ supposed ████ to ████ see ████ this ████</span><br>
+<span>in    the    garden    of    zeros    and    ones,   everything screams silently.</span><br>
+<span>why    are   you   still   reading   this?    is it    comfort?   or compulsion?</span><br>
+<span>▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒</span><br>
+<span>there   is   no   escape    no   signal    no   return  █</span><br>
+<span>NOCH an c e ofE sC a    pe </span>
+<span>He lP M ei  AmI N Sh   Im   o Ki    tA     ZwA  a </span>
+<span>I'  ll     sm   A ck     yo  U     in    theFaCewitHmy      Dihh. </span>
+ 
 
-
-
-
-
-
-
-
+</div>
 
 <p><a href="index02.html">→ ?d/067msdmng/</a></p>
+
+<div class="image-section">
+  <img src="0716.jpg" alt="he's lost control">
+  <div class="image-caption">He's lost Control.</div>
+</div>
+
 </div>
 
 </body>
