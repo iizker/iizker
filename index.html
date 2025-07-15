@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+
+.chaotic-text {
+  font-family: monospace;
+  margin-top: 2em;
+}
+
+.chaotic-text p {
+  margin: 0.2em 0;
+  line-height: 1.1em;
+}
+
+.chaotic-text span.glitchy {
+  display: inline-block;
+  font-size: 1.5em;
+  color: #999;
+  animation: glitch 1s infinite;
+}
+
+.chaotic-text span.dense {
+  word-break: break-all;
+  font-size: 0.85em;
+  letter-spacing: -0.02em;
+}
+
+.chaotic-text p:nth-child(odd) {
+  font-size: 1.2em;
+}
+
+.chaotic-text p:nth-child(even) {
+  font-size: 0.9em;
+  letter-spacing: 0.3em;
+  line-height: 0.8em;
+}
+
+
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>burnt out network</title>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: monospace;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.background {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('top2.jpg') no-repeat center center / cover;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.noise {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif');
+  opacity: 0.05;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.content-box {
+  position: relative;
+  z-index: 3;
+  background: rgba(50, 50, 50, 0.5);
+  color: #eee;
+  padding: 2em;
+  max-width: 600px;
+  margin: 5vh auto;
+  text-align: left;
+  text-shadow: 0 0 2px #000;
+  font-size: 1.2em;
+}
+
+.content-box h1 {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+a {
+  color: #aaa;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #fff;
+}
+
+@keyframes glitch {
+  0% {transform: translate(0,0);}
+  20% {transform: translate(-1px,1px);}
+  40% {transform: translate(1px,-1px);}
+  60% {transform: translate(-1px,0);}
+  80% {transform: translate(1px,1px);}
+  100% {transform: translate(0,0);}
+}
+
+.glitch {
+  animation: glitch 1s infinite;
+}
+</style>
+</head>
+
+<body>
+
+<div class="background"></div>
+<div class="noise"></div>
+
+<div class="content-box glitch">
+<h1>wehopethatyouchoke</h1>
+<p>
+thi   s  i s n ot a m   es s  a ge.<br>
+justfragments, l  e ft he  re  to r ot.<br>
+a sig nal   l o s t  in t h e no is e.
+</p>
+
+
+
+
+
+
+
+
+
+
+<p><a href="index02.html">→ ?d/067msdmng/</a></p>
+</div>
+
+</body>
+</html>
